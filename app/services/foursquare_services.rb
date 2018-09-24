@@ -9,6 +9,6 @@ class FoursquareService
     end
 
     body = JSON.parse(resp.body)
-    session[:token] = body["access_token"]
+    body['access_token']
   end
 end
